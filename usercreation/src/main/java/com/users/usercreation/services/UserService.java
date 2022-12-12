@@ -11,7 +11,7 @@ public interface UserService {
     User validateUser(String email, String password) throws EtAuthException;
 
     User registerUser(String firstName, String lastName, String email, String password) throws EtAuthException;
-void updateUser(Integer userId,User user)throws EtAuthException;
+    void updateUser(Integer userId,User user)throws EtAuthException;
     List<User> fetchAllUsers();
     User fetchUserById(Integer userId) throws UaResourceNotFoundException;
     void removeUser(Integer userId) throws UaResourceNotFoundException;
